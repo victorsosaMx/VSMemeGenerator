@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSMemeGenerator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  
+
+</head>
+<body>
+    <div class="container">
+        <h1>VSMemeGenerator</h1>
+        <p>Genera memes de forma sencilla y rápida</p>
+        <div class="meme-generator">
+            <input type="file" id="imageInput" accept="image/*">
+            <input type="text" id="topText" placeholder="Texto Superior">
+            <input type="text" id="bottomText" placeholder="Texto Inferior">
+            <button id="generateMeme">Generar Meme</button>
+        </div>
+        <div class="meme-canvas">
+            <canvas id="memeCanvas"></canvas>
+        </div>
+        <button id="downloadMeme">Descargar Meme</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
